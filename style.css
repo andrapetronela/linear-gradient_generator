@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: Roboto;
+    font-weight: 200;
+    background-image: linear-gradient(to right bottom, #e877c5, #011022);
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+h1, h2 {
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+input {
+    margin-top: 5rem;
+    margin-left: .7rem;
+    width: 5rem;
+    border: none;
+    border-radius: none;
+}
+label {
+    font-family: Roboto;
+    font-size: 1.2rem;
+}
+
+h3 {
+    margin-top: 5rem;
+    letter-spacing: 1px;
+}
