@@ -8,10 +8,11 @@ body {
     font-size: 62.5%;
     font-family: Roboto;
     font-weight: 200;
-    background-image: linear-gradient(to right bottom, #e877c5, #011022);
+    background-image: linear-gradient(to right bottom, #e877c5, #011022); 
     height: 100vh;
     color: #fff;
     text-align: center;
+    overflow: hidden;
 }
 
 h1, h2 {
@@ -45,7 +46,7 @@ label {
 }
 
 h3 {
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     letter-spacing: 1px;
     font-family: Roboto;
     font-size: 1.5rem;

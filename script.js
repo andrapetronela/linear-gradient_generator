@@ -15,4 +15,46 @@ color1.addEventListener("input", gradient);
 color2.addEventListener("input", gradient);
 
 
+let container = document.getElementById("#container");
+let middleX = canvas.width / 2;
+let middleY = canvas.height / 2;
+    
+function getRandomColor() {
+    var letters = 'fff176fffffff'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.round(Math.random() * 15)];
+    }
+    return color;
+}    
+
+    document.addEventListener("mousemove", function(event) {
+    	let canvas = document.getElementById("canvas");
+    	let ctx = canvas.getContext("2d");
+    
+    	let mouseX = event.clientX;
+    	let mouseY = event.clientY;
+
+    	ctx.beginPath();
+    	ctx.strokeStyle = getRandomColor();
+		let circle = ctx.arc(mouseX, mouseY-canvas.height, 18, 0, 2*Math.PI);
+		ctx.stroke();
+    });
+
+    document.addEventListener("click", function(event) {
+        let canvas = document.getElementById("canvas");
+    	let ctx = canvas.getContext("2d");
+    
+    	let mouseX = event.clientX;
+    	let mouseY = event.clientY;
+    	
+       
+    	ctx.beginPath();
+    	ctx.fillStyle = getRandomColor();
+		ctx.arc(mouseX, mouseY - canvas.height, 18, 0, 2*Math.PI);
+		ctx.fill();
+        
+        
+        
+    });
 
