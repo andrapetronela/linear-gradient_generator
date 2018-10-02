@@ -20,7 +20,7 @@ let middleX = canvas.width / 2;
 let middleY = canvas.height / 2;
     
 function getRandomColor() {
-    var letters = 'fff176fffffff'.split('');
+    var letters = 'fff176acd'.split('');
     var color = '#';
     for (var i = 0; i < 6; i++ ) {
         color += letters[Math.round(Math.random() * 15)];
