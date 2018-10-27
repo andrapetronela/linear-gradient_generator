@@ -8,7 +8,6 @@ function gradient() {
     
     body.style.background = "linear-gradient(to right bottom, " + color1.value + ", " + color2.value + ")";
     h3.textContent = body.style.background + ";";
-    
 }
 
 color1.addEventListener("input", gradient);
@@ -20,7 +19,7 @@ let middleX = canvas.width / 2;
 let middleY = canvas.height / 2;
     
 function getRandomColor() {
-    var letters = 'fff176acd'.split('');
+    var letters = 'fffacd'.split('');
     var color = '#';
     for (var i = 0; i < 6; i++ ) {
         color += letters[Math.round(Math.random() * 15)];
@@ -31,10 +30,8 @@ function getRandomColor() {
     document.addEventListener("mousemove", function(event) {
     	let canvas = document.getElementById("canvas");
     	let ctx = canvas.getContext("2d");
-    
     	let mouseX = event.clientX;
     	let mouseY = event.clientY;
-
     	ctx.beginPath();
     	ctx.strokeStyle = getRandomColor();
 		let circle = ctx.arc(mouseX, mouseY-canvas.height, 18, 0, 2*Math.PI);
@@ -44,17 +41,10 @@ function getRandomColor() {
     document.addEventListener("click", function(event) {
         let canvas = document.getElementById("canvas");
     	let ctx = canvas.getContext("2d");
-    
     	let mouseX = event.clientX;
     	let mouseY = event.clientY;
-    	
-       
     	ctx.beginPath();
-    	ctx.fillStyle = getRandomColor();
+    	ctx.fillStyle = "#b73f92";
 		ctx.arc(mouseX, mouseY - canvas.height, 18, 0, 2*Math.PI);
 		ctx.fill();
-        
-        
-        
     });
-
